@@ -5,7 +5,7 @@ SERVICE_NAME=app-headless.default.svc.cluster.local
 
 
 run: cert files image
-	docker compose up --remove-orphans
+	docker compose -p dqlite-experiments -f assets/compose.yaml up --remove-orphans
 
 image:
 	docker build -t testapp -f $(docker_dir)/Dockerfile .

@@ -5,8 +5,8 @@
 make
 
 # then stop the stack
-docker compose down
+docker compose -p dqlite-experiments -f assets/compose.yaml down
 
 # and start it again to see the issue
-docker compose up
+docker compose -p dqlite-experiments -f assets/compose.yaml up
 ```
