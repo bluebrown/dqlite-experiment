@@ -4,9 +4,9 @@
 # build deps and start prject
 make
 
-# then stop the stack
-docker compose -p dqlite-experiments -f assets/compose.yaml down
+# then stop the stack (ctrl-c)
+docker compose -p test -f assets/compose.yaml down
 
 # and start it again to see the issue
-docker compose -p dqlite-experiments -f assets/compose.yaml up
+docker compose -p test -f assets/compose.yaml up
 ```

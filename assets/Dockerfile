@@ -17,8 +17,5 @@ COPY --from=0 /workspace/counter ./
 COPY sql/migrations sql/migrations
 RUN mkdir /app/data
 COPY bin/httpcheck /usr/local/bin/httpcheck
-# COPY --chmod=755 assets/entrypoint.sh /
-# RUN apt-get -y install openssl
-# ENTRYPOINT [ "/entrypoint.sh" ]
 CMD [ "/app/counter" ]
 
