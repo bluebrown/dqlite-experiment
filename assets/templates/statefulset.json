@@ -1,0 +1,8 @@
+{
+    "certPath": "/app/cert",
+    "dataDir": "/app/data",
+    "httpPort": 8080,
+    "image": "testapp",
+    "name": "app",
+    "replicas": 3
+}

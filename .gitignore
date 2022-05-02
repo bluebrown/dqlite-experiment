@@ -1,0 +1,5 @@
+/assets/compose.yaml
+/assets/haproxy.cfg
+/assets/cert
+!/assets/cert/.gitkeep
+/cmd/distributed/keep.go

@@ -1,0 +1,7 @@
+wipe            = true
+no-tests        = true
+output          = "pkg/models"
+
+[sqlite3]
+dbname      = "sql/dev.db"
+blacklist   = ["schema_migrations"]
